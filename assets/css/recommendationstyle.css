@@ -1,0 +1,26 @@
+/* CSS for Doctor's Image */
+.doctor img {
+    width: 2in; /* Set width to 2 inches */
+    height: 2in; /* Set height to 2 inches */
+    border-radius: 50%; /* Ensure the image is circular */
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the image covers the entire circular area */
+    object-position: center; /* Center the image within the circular area */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS for YouTube Video Thumbnail */
+.video-thumbnail {
+    margin-top: 50px;
+    width: 80%; /* Make video thumbnail take full width */
+    height: 80%;
+    max-width: 600px; /* Increase maximum width for larger screens */
+    max-height: 600px; /* Increase maximum height */
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,29 @@
+<style>
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: transparent, black; /* Set background to transparent */
+        min-width: 160px;
+        box-shadow: 10px 8px 20px 10px rgb(195, 17, 17);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #000; /* Set default text color */
+        text-decoration: none;
+        font-size: 16px; /* Set text size to 16px */
+        display: block;
+        padding: 8px 0; /* Add padding top and bottom */
+        transition: background-color 0.3s; /* Add transition effect */
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f2f2f2; /* Light gray shade on hover */
+        border-radius: 10px; /* Rounded edges */
+    }
+
+    .nav-item:hover .dropdown-content {
+        display: block;
+    }
+</style>

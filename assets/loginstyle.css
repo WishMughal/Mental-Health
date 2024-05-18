@@ -1,0 +1,119 @@
+/* CSS for Popup Containers */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Lightly transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure popup appears above other content */
+    width: 400px; /* Set the width of the popup */
+    max-height: 80%; /* Set the maximum height of the popup */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+.popup-content {
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+     /* Set the font family for all text */
+}
+
+
+/* Close Button Style */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: red;
+}
+
+/* Form Style */
+.popup form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Input Field Style */
+.popup input[type="text"],
+.popup input[type="email"],
+.popup input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    display: block;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Sign Up Link Style */
+.popup a {
+    color: #f3462cee; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.popup a:hover {
+    color: rgba(0, 0, 255, 0.808); /* Darker blue on hover */
+}
+
+.popup p {
+    color: #28a745;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+/* Submit Button Style */
+/* Submit Button Style */
+.popup button[type="submit"] {
+    background-color: none; /* Transparent background */
+    color: #000000e1;
+    border-color: #000000; /* Black border */
+    border-style: solid;
+    border-width: 2px; /* Adjust border width */
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Add transition for background and border color */
+}
+
+.popup button[type="submit"]:hover {
+    color: black;
+    background-color: #28a746a9; /* Darker blue on hover */
+    border-color: #18772e; /* Change border color on hover */
+}
+
+
+/* Heading Style */
+.popup h2 {
+    margin-bottom: 20px;
+    font-family: Double struck;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+}
+
+/* Paragraph Style */
+.popup p {
+    margin-bottom: 14px;
+}
+
+/* Unique Style for Login and Sign Up Headings */
+#loginPopup h2 {
+    color: #28a745; /* Blue color for login heading */
+}
+
+#signupPopup h2 {
+    color: #28a745; /* Green color for signup heading */
+}
